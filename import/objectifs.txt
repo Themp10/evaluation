@@ -1,0 +1,189 @@
+id_ligne	annee	user	Objectif	INDICATEUR DE MESURE	ECHEANCE
+0	2024	6	PLUS DE FLEXIBILITE  ET TRAVAILLER SUR SOI POUR UN OBJECTIF "ORIENTATION CLIENT"		
+0	2024	8	PRE-RECEPTION SAV T2 OP		T1 2024
+1	2024	8	PRE-RECEPTION SAV T3 OP		T2 2024
+0	2024	9	SOLDER TOUS LES DOSSIERS RESTANTS SUR KPC/ZENATA/BELAIR/MNO	ATTEINDRE UN TAUX DE 100%	T3/2024
+1	2024	9	METTRE EN PLACE UNE STRATEGIE PROACTIVE DE RECOUVREMENT POUR LES PROCHAINS DOSSIERS OCEAN PARK TR1 ET TR2 ET TR3		45657
+2	2024	9	REALISER UN CHIFFRE D'AFFAIRE IMPORTANT		
+0	2024	10	1er niveau d'analyse des comptes sur SAP	Livrable	45473
+1	2024	10	Etre à jour en ce qui concerne la saisie et la clôture sur SAP pour les années précedentes et à venir	Livrable	45413
+2	2024	10	Respecter les délais imposés par les arrêtés mensuels sur SAP	Livrable	Echencier repporting
+3	2024	10	Autonomie à la Préparation des bilans	Livrable	45488
+4	2024	10	Respectez les delais imposés pour la communication des situations suivi des réglements	Livrable	hebdomadaire
+0	2024	11	VENDRE MAGASINS PARC PLAZA		45657
+1	2024	11	VENDRE MAGASINS CHAMPS DE LYS		45657
+2	2024	11	LANCER DES COMPAGNES MARKETING AUPRES DU SERVICE MARKETING (PARC PLAZA-CHAMPS DE LYS)		45412
+3	2024	11	FINALISER LES TRAVAUX RESTANTS MNO		45412
+4	2024	11	EXPLOITER LES BIENS VACANTS		45657
+5	2024	11	ACCOMPAGNER L'ECOLE (SMQ - ACHATS)		45657
+0	2024	12	Prise d'initiative et être force de proposition		T4 - 2024
+1	2024	12	Améliorer la qualité des livrables et s'orienter vers les tendances du domaine		T4 - 2024
+2	2024	12	Commencer a faire des montages vidéos & Gifs		T4 - 2024
+3	2024	12	Respect des briefs		T4 - 2024
+4	2024	12	Livraison des livrables dans les délais à 90%		T4 - 2024
+0	2024	13	Execution du plan de formation		T4 - 2024
+1	2024	13	Intranet RH		T4 - 2024
+2	2024	13	QVT		T4 - 2024
+3	2024	13	Communication Interne		T4 - 2024
+0	2024	14	LIQUIDATION PARTIE COLIVING (WE LIVE) 	BUDGET / CA	45566
+1	2024	14	LIQUIDATION PARTIE CONVENTIONNE (WE LIVE) 	BUDGET / CA	45566
+0	2024	15	WELIVE : SUIVI DES CONTRATS NON SIGNES / TRAITER DOSSIERS INCOMPLETS / RECOUVREMENT DES RELIQUATS DES AVANCES		45413
+1	2024	15	RECOUVREMENT DES ECHEANCES RESTANTES (CPV/TRAVAUX/PRDC)		T1 - 2024
+2	2024	15	RECOUVREMENT DES ECHEANCES RELATIVES A L'ACHEVEMENT DES TRAVAUX GO		T2 - 2024
+3	2024	15	SUIVI DES DEMANDES DE CAUTIONNEMENT RELATIVES AUX AVANCES CONSIGNEES CHEZ LES NOTAIRES.		avr.-24
+4	2024	15	PREPARATION DE LA LIVRAISON UPTOWN		T4 - 2024
+0	2024	16	Liquidation We LIVE ( Box et Place de Parking incluse )		45566
+1	2024	16	Livraison et suivi UPTOWN 		45566
+0	2024	17	LIVRAISON TF T3 ZOP		
+1	2024	17	LIVRAISON TF UPTOWN RESIDENTIEL ET BUREAUX		
+0	2024	18	DIGITALISATION DES PROCESSUS		45657
+1	2024	18	ARRETE MENSUEL		45535
+2	2024	18	ORGANISATION ET OPTIMISATION DES FRAIS GENERAUX		45657
+0	2024	19	TRAVAILLER PLUS SUR SOI POUR LES BONNES PRISE DE DECISIONS AFIN DE GERER LES SITUATIONS CONFLICTUEUSES		
+0	2024	20	1er niveau d'analyse des comptes de toutes les sociétés Groupe	Livrable	45473
+1	2024	20	Etre à jour en ce qui concerne la saisie et la clôture sur SAP pour les années précedentes et à venir	Livrable	45413
+2	2024	20	Respecter les délais imposés par les arrêtés mensuels sur SAP	Livrable	Echencier repporting
+3	2024	20	Préparation des bilans	Livrable	45488
+4	2024	20	Respectez les delais imposés pour la communication des situations suivi des réglements	Livrable	hebdomadaire
+0	2024	21	Liquidation stock Uptown Bureaux et magasin 		8/31/2024
+0	2024	22	LIQUIDATION PROJET OCEAN PARK	CA 	45657
+1	2024	22	LIVRAISON PROJET OCEAN PARK T1 T2 T3	CA 	45657
+2	2024	22	LIQUIDATION PROJET ZENATA TOWER	CA 	45657
+3	2024	22	LIVRAISON PROJET ZENATA TOWER 	CA 	45657
+0	2024	23	liquidation stock welive		45566
+1	2024	23	liquidation box		45566
+0	2024	24	Liquidations des bureaux sur KPC		45657
+1	2024	24	liquider les magasins sur kPC .		45657
+2	2024	24	préparation des bilans (semestriel)		ANNEE 2024
+0	2024	25	Prise en charge de l'organisation administratives ( procédures + canevas)		45657
+0	2024	26	AUGMENTER LE TAUX DE QUALIFICATION 	PASSER DE 41 A 48 %	12 MOIS 
+1	2024	26	AUGMENTER LE TAUX DE TRANSFORMATION VISITE	PASSER DE 32 A 40 %	12 MOIS 
+2	2024	26	AUGMENTER LE TAUX DE CONVERSION VENTE	PASSER DE 19 A 22 %	12 MOIS 
+0	2024	28	AUGMENTER LE TAUX DE QUALIFICATION 	PASSER DE 38 A 42 %	12 MOIS 
+1	2024	28	AUGMENTER LE TAUX DE TRANSFORMATION VISITE	PASSER DE 32 A 40 %	12 MOIS 
+2	2024	28	AUGMENTER LE TAUX DE CONVERSION VENTE	PASSER DE 14 A 19 %	12 MOIS 
+0	2024	29	METTRE A JOUR LE RAD DES PROJETS EN PARALLELE AVEC LA CLÖTURE MENSUELLE	TAUX DE RESPECT DU RAD PAR PROJET	45444
+1	2024	29	MAITRISE LE CONTRÔLE BUDGETAIRE DES FRAIS GENERAUX EFFICIENTE	NOMBRE D'ECARTS	45536
+2	2024	29	REALISER DES REPORTING ET LES TABLEAUX DE BORDS DES PROJETS	NOMBRE DE PROJETS EFFECTUES	45627
+3	2024	29	PREPARER UN SUIVI DE CASH-FLOW MENSUEL DES PROJETS	TAUX DE RESPECT DU RAPPROCHEMENT BANCAIRE	45627
+0	2024	30	AUGMENTER LE TAUX DE QUALIFICATION 	PASSER DE 38 A 42 %	12 MOIS 
+1	2024	30	AUGMENTER LE TAUX DE TRANSFORMATION VISITE	PASSER DE 25 A 32 %	12 MOIS 
+2	2024	30	AUGMENTER LE TAUX DE CONVERSION VENTE	PASSER DE 9 A 15 %	12 MOIS 
+0	2024	31	Prise d'initiative et être force de proposition		T4 - 2024
+1	2024	31	Augmentation de la notoriété de la marque et amélioration de la marque emlployeur		T4 - 2024
+2	2024	31	Performances des campagnes avec une optimisation ROI		T4 - 2024
+3	2024	31	Assurer une communication efficace entre les équipes pour garantir l'alignement sur les objectifs organisationnels		T4 - 2024
+4	2024	31	Améliorer les taux de conversion des campagnes en ligne		T4 - 2024
+5	2024	31	Assurer le bon fonctienement du département marketing		T4 - 2024
+0	2024	32	MAITRISE DU PROCESS ADV ET RECOUVREMENT		T4 - 2024
+1	2024	32	MAITRISE ET GESTION DU LOGICIEL SAP		T4 - 2024
+2	2024	32	INTEGRATIONS DE TOUS LES DOSSIERS AU FUR ET A MESURE DES RESERVATIONS POUR TOUS PROJETS		T4 - 2024
+3	2024	32	NUMERISATION DE TOUS LES DOSSIERS DE TOUS PROJETS		T4 - 2024
+4	2024	32	PARTICIPATION A DE NOUVEAUX CHALLENGES ( SUIVI DOSSIERS CREDITS, SUIVI CAUTIONNEMENTS VEFA…)		T4 - 2024
+0	2024	33	"Organisation et optimisation du CRC: 
+suivi et participation active à l'optimisation de l'outil CRM GECIMMO
+Mise en place d'une nouvelle solution téléphonique pour améliorer l'opérationalité du CRC"		
+1	2024	33	piloter l'équipe de CRC, définir et suivre les objectifs, organiser le travail et transmettre les décisions de la direction		
+2	2024	33	Assurer le suivi des indicateurs de performance et annimer la démarche d'amélioration continue en indentifiant les axes d'amélioration et en accompagnant les équipes dans la maitrise des process		
+3	2024	33	Taux de conversion visite : Augmenter le taux de conversion des leads en rendez-vous confirmés en mettant en place des stratégies de qualification et de suivi efficaces		
+4	2024	33	Taux de transformation vente : augmenter le taux de transformation des visites en vente des leads en mettant en place des stratégies de haute qualification du lead et de suivi efficaces		
+5	2024	33	Mise en place technique commercial		
+6	2024	33	Mise en place prospection en emission d'appel		
+0	2024	34	Mettre en place un outils de suivi des consommables informatiques	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	févr.-24
+1	2024	34	Mettre en place un outils de suivi de la fourniture de bureau 	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	févr.-24
+2	2024	34	Mettre en place des DASHBOARD / Outils d'assistance des Utilisateurs/Directeurs (Achats, ventes...)	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	Toute l'année 2024
+3	2024	34	Mettre en place l'outil de suivi de la téléphonie	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	févr.-24
+4	2024	34	Participer et s'assurer de la bonne mise en œuvre des projets de mise à niveau de l'infrastructure IT	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	45352
+5	2024	34	Participer et s'assurer de la bonne mise en œuvre du projet de l'intranet 	"Finalisation et stabilisation de la solution :
+1- Délais réel de réalisation du projet / Délais prévu
+2- Coût réel / Coût prévu
+3- Qualité du projet "	sept.-24
+6	2024	34	Mise en place et déploiement des procédures IT 	"1- Nombre des procédures produit / Nombre prévu
+2- Qualité du livrable "	avr.-24
+7	2024	34	Veiller à la disponibilité de l'infrastructre informatique 	Le nombre d'incident constaté dans l'année	Toute l'année 2024
+8	2024	34	Assistance users solution (SAP, téléphonie, GECIMMO, Sage Paie …)	Nombre de tickets traité / Nombre de tickets ouvert	Toute l'année 2024
+0	2024	35	Assurer la gestion comptable, déclaratifs et treso d'une société de promotion imobilière et d'autres sociétés définies par le comité financié	Livrable	A définies par le comité financié
+1	2024	35	1er niveau d'analyse des comptes sur SAP	Livrable	45473
+2	2024	35	Etre à jour en ce qui concerne la saisie et la clôture sur SAP pour les années précedentes et à venir	Livrable	45413
+3	2024	35	Respecter les délais imposés par les arrêtés mensuels sur SAP	Livrable	Echencier repporting
+4	2024	35	Autonomie à la préparation des bilans (semestriel)	Livrable	45488
+5	2024	35	Respectez les delais imposés pour la communication des situations suivi des réglements	Livrable	hebdomadaire
+0	2024	36	Participer et s'assurer de la bonne mise en œuvre des projets de mise à niveau de l'infrastructure IT	"Délais réel de réalisation du projet / Délais prévu
+Coût réel / Coût prévu
+Qualité du projet "	45352
+1	2024	36	Mettre à niveau des outils informatiques clients (Configuration, composants)	Taux de PC mis à niveau (NBR Réalisé / Total parc défaillant)	45352
+2	2024	36	Veiller à la maintenance du parc informatique (Maintenance préventive et curative)	"Taux de disponibilité des postes 
+Taux de réparation"	Toute l'année 2024
+3	2024	36	Assister les users 	Nombre de tickets traité / Nombre de tickets ouvert	Toute l'année 2024
+4	2024	36	S'assurer que tous les Pcs et les serveurs sont intégrés au Domaine	Nombre de machines domaine/Nombre total des machines	45352
+5	2024	36	Participer à la mise en place de la politique de sécurité et veiller à sa mise en œuvre 	Nombre d'incident lié à la sécurité 	févr.-24
+6	2024	36	Compléter le processus de sauvegarde par la copie externe et assurer la sauvegarde conformément au plan de sauvegarde et mettre en place une procédure de restauration et s'assurer du respect de cette dernière	"Existance procédure de sauvegarde
+Respect du plan de sauvegrade
+Nombre de PVS de restauration "	févr.-24
+7	2024	36	Mettre en place d'un Serveur Secondaire Active Directory	Mise en place du serveur 	45444
+8	2024	36	Mettre en place d'un outil de supervision réseau pour assurer une gestion des incidents réseaux efficace	Mise en place de l'outil 	45474
+0	2024	37	ASSURER LE SUIVI DU COMPTE CLIENT	DELAI DE REALISATION	45444
+1	2024	37	MAITRISER LE CONTRÔLE BUDGETAIRE DE MANIÈRE EFFICIENTE	NOMBRE D'ECARTS ANALYTIQUE PAR PROJET	45536
+2	2024	37	PREPARER UN SUIVI DE CASH-FLOW MENSUEL DES PROJETS	TAUX DE RESPECT DU RAPPROCHEMENT BANCAIRE	45627
+3	2024	37	REALISER DES REPORTING ET LES TABLEAUX DE BORDS DES PROJETS	NOMBRE DE PROJETS EFFECTUES	45627
+0	2024	43	Mettre en place un contrat cadre pour les services moyens généraux	Nbr de nouveaux contrats	45352
+1	2024	43	Continuer à améliorer le coût d'achat unitaire 	Mettre en place un tableau de suivi des prix d'achat unitaire 	Toute l'année
+2	2024	43	Mettre en place un processus de maintenance préventive des locaux 	La procédure Nombre d'incidents	Toute l'année
+3	2024	43	Continuer à recruter de nouveaux fournisseurs (Sourcing)	Nombre de recrues	Toute l'année
+4	2024	43	Continuer à améliorer le délais de traitement des demandes 	Taux de service (Date BC- Date DA)	Toute l'année
+0	2024	44	RENFORCER LE SOURCING  PRODUCT	RAPPORT QUALITE / PRIX PAR LOT ACHAT (AVANT ET APRES)	45657
+1	2024	44	OPTIMISATION DU TAUX DE SERVICE	TAUX DE SERVICE	45657
+2	2024	44	CONTRAT CADRE		
+3	2024	44	SOURCING		
+4	2024	44	RESPECT SMQ		
+0	2024	45	ORGANISATION MOD		
+1	2024	45	RESPECT DELAI		
+2	2024	45	ORGANISATION MOE		
+3	2024	45	OPTIMISATION PHASE ETUDE		
+4	2024	45	PILOTAGE SYNTHESE		
+0	2024	47	Mise en place du nouveau logiciel Archipad pour optimiser la gestion des projets et améliorer la communication interne.		
+1	2024	47	Livraison des tranches T3 et T4 du projet OP,		
+2	2024	47	Gestion des pré-réceptions, réceptions provisoires et livraisons des appartements aux clients.		
+3	2024	47	Supervision des travaux complexes de la tranche Galère KPC, incluant l'assistance à maîtrise d'ouvrage (AMO) et le suivi des travaux.Négociation des devis avec les fournisseurs et prestataires pour garantir la meilleure qualité au meilleur coût.		
+4	2024	47	Aménagement, réalisation et suivi des travaux WC Public de la galerie.		
+5	2024	47	Suivi des travaux attribués par Mr Imad bureau venezia ice et novotel.		
+6	2024	47	Mise en état de appartement  Marina Casablanca.		
+0	2024	51	MAITRISE DES TACHES ADMINISTRATIVES EN CAS D'INTERIME		
+0	2024	52	1er niveau d'analyse des comptes sur SAP	Livrable	45473
+1	2024	52	Etre à jour en ce qui concerne la saisie et la clôture sur SAP pour les années précedentes et à venir	Livrable	45413
+2	2024	52	Respecter les délais imposés par les arrêtés mensuels sur SAP	Livrable	Echencier repporting
+3	2024	52	Autonomie à la Préparation des bilans	Livrable	45488
+4	2024	52	Respectez les delais imposés pour la communication des situations suivi des réglements	Livrable	hebdomadaire
+0	2024	53	réaliser un chiffre d'affaire important au niveau du recouvrement des autres projets du groupe		2024
+1	2024	53	solder tous les dossiers en retards de tous les projets du groupe		2024
+2	2024	53	liquider le reste des dossiers contentieux		2024
+3	2024	53	assurer les dossiers financiers en cours avec RAF		2024
+0	2024	54	Liquidation du stock UPTOWN 		8/31/2024
+0	2024	55	Suivi et contrôle Qualité des travaux de Zenata Ocean Park : Tranche 3 & 4	Qualité + Délais	déc.-24
+1	2024	55	Contrôle Qualité des travaux deu projet UPTOWN	Qualité + Délais	déc.-24
+0	2024	56	SUIVI TRAVAUX GALERIE KPC		T2
+0	2024	57	Liquider le stock restant des plateaux bureaux au Business Center		Fin de l'année
+1	2024	57	Commercialisation des magasins sur Central Parc et KPC après aménagement des galeries		durant toute l'année
+2	2024	57	Liquider le stock restant des appartements sur Central Parc		Trimestres 2 et 3 
+3	2024	57	Participer à la commercialisation des nouveaux projets		Tout au long de l'année
+0	2024	58	LIQUIDATION PROJET OCEAN PARK	CA 	12/31/2024
+1	2024	58	LIVRAISON PROJET OCEAN PARK T1 T2 T3	CA 	12/31/2024
+2	2024	58	LIQUIDATION PROJET ZENATA TOWER	CA 	12/31/2024
+3	2024	58	LIVRAISON PROJET ZENATA TOWER 	CA 	12/31/2024
+0	2024	59	PRISE D'INITIATIVE		
+1	2024	59	AUTONOMIE DANS LA RESOLUTION DES PROBLEMES		
