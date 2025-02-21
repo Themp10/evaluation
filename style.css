@@ -636,6 +636,29 @@ outline: none;
     color: white;
 }
 
+.filter-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    font-weight: bold;
+}
+.filter-title{
+    width: 150px;
+}
+.selected-filter{
+    border: 3px solid var(--primary-color) !important;
+}
+.filter-statut {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+    
+}
 
 .rh-statut {
     text-align: center;

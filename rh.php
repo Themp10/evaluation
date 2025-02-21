@@ -1,6 +1,6 @@
 <?php
-    ini_set('session.gc_maxlifetime', 3600);
-    ini_set('session.cookie_lifetime', 3600);
+    ini_set('session.gc_maxlifetime', 36000);
+    ini_set('session.cookie_lifetime', 36000);
 
 session_start();
 $annee=date('Y');
@@ -80,12 +80,14 @@ function generateTableEtat(){
 
     foreach ($etat as $row) {
         //auto evaluation
+
+
         if($row['submit']==1){
             $statusAE='Réalisée';
             $classSubmit="submited";
         }else{
             if($row['saisie']==1){
-                $statusAE='Encours';
+                $statusAE='En cours';
                 $classSubmit="encours";
 
             }else{
@@ -102,7 +104,7 @@ function generateTableEtat(){
             $classR="validated";
         }else{
             if($row['submit']==1){
-                $statusER='Encours';
+                $statusER='En cours';
                 $classR="encours";
             }
         }
@@ -126,7 +128,7 @@ function generateTableEtat(){
             $statusRH='Validée';
             $classRH="validated";
         }else{
-            if($row['validation2']==1){
+            if($row['validation2']==1 || $row['validation1']==1 ){
                 $statusRH='En cours';
                 $classRH="encours";
             }
@@ -139,7 +141,7 @@ function generateTableEtat(){
             $statusDG='Validée';
             $classDG="validated";
         }else{
-            if($row['validationRH']==1){
+            if($row['validationRH']==1 && $row['validation2']==1){
                 $statusDG='En cours';
                 $classDG="encours";
             }
@@ -380,16 +382,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <span class="arrow">&#9660;</span>
     </div>
     <div class="accordion-content">
+        <div class="filter-container">
+            <div class="filter-row">
+                <div class="filter-title">Auto Evaluation : </div>
+                <div class="filter-statut submited" onclick="selectFilter(this)">Réalisée</div>
+                <div class="filter-statut encours" onclick="selectFilter(this)">En cours</div>
+                <div class="filter-statut nondebutee" onclick="selectFilter(this)">Non débutée</div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-title">Evaluation N+1 : </div>
+                <div class="filter-statut validated" onclick="selectFilter(this)">Validée</div>
+                <div class="filter-statut encours" onclick="selectFilter(this)">En cours</div>
+                <div class="filter-statut enattente" onclick="selectFilter(this)">En attente</div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-title">Evaluation N+2 : </div>
+                <div class="filter-statut validated" onclick="selectFilter(this)">Validée</div>
+                <div class="filter-statut encours" onclick="selectFilter(this)">En cours</div>
+                <div class="filter-statut enattente" onclick="selectFilter(this)">En attente</div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-title">Evaluation RH : </div>
+                <div class="filter-statut validated" onclick="selectFilter(this)">Validée</div>
+                <div class="filter-statut encours" onclick="selectFilter(this)">En cours</div>
+                <div class="filter-statut enattente" onclick="selectFilter(this)">En attente</div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-title">Evaluation DG : </div>
+                <div class="filter-statut validated" onclick="selectFilter(this)">Validée</div>
+                <div class="filter-statut encours" onclick="selectFilter(this)">En cours</div>
+                <div class="filter-statut enattente" onclick="selectFilter(this)">En attente</div>
+            </div>
+        </div>
         <table border="1" id="table-etat">
             <thead>
             <tr>
-                <th width="15%">Employé</th>
-                <th width="15%">Responsable</th>
-                <th width="15%">Auto évaluation</th>
-                <th width="15%">Evaluation n+1</th>
-                <th width="15%">Evaluation n+2</th>
-                <th width="15%">Evaluation RH</th>
-                <th width="10%">Evaluation DG</th>
+                <th width="20%">Employé</th>
+                <th width="20%">Responsable</th>
+                <th width="12%">Auto évaluation</th>
+                <th width="12%">Evaluation n+1</th>
+                <th width="12%">Evaluation n+2</th>
+                <th width="12%">Evaluation RH</th>
+                <th width="12%">Evaluation DG</th>
             </tr>
             </thead>
             <tbody>
@@ -402,12 +436,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="eval-header">
             <h2>Validation des évaluations</h2>
         </div>
-
             <form class="rh-collaborateurs-container" action="rh.php" method="post">
             <h1>Collaborateurs</h1>
             <?php foreach ($collabList as $collaborateur): ?>
                 <?php if ($collaborateur['validationDG'] == 0): ?>
-                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="<?=$collaborateur['validationRH'] == 1 ? 'collaborateurN2' : ($collaborateur['validation2'] == 1 ? 'collaborateur valideeN1' : 'collaborateur')?>">
+                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="<?=($collaborateur['validation1']==1 && $collaborateur['validation2']==1 && $collaborateur['validationRH']==1 && $collaborateur['validationDG']==0) ? 'collaborateurN2' :'collaborateur'?>">
                         <?= htmlspecialchars($collaborateur['Employe']) ?>
                     </button>
                 <?php endif; ?>
@@ -416,7 +449,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1>Validé par DG</h1>
             <?php foreach ($collabList as $collaborateur): ?>
                 <?php if ($collaborateur['validationDG'] == 1): ?>
-                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="<?=$collaborateur['validationRH'] == 1 ? 'collaborateurN2' : ($collaborateur['validation2'] == 1 ? 'collaborateur valideeN1' : 'collaborateur')?>">
+                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="collaborateurN2">
                         <?= htmlspecialchars($collaborateur['Employe']) ?>
                     </button>
                 <?php endif; ?>
@@ -446,7 +479,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
                
-                <?php if ($validation['validationRH']==1): ?>
+                <?php if ($validation['validation1']==1 && $validation['validation2']==1 && $validation['validationRH']==1 && $validation['validationDG']==0): ?>
                     <button onclick="validationDG()" class="button-validion">Valider</button>
                 <?php endif; ?> 
 
@@ -884,7 +917,7 @@ Actions d’accompagnement envisagées (formation, mise en situation, tutorat, �
             </div>
 
 
-            <?php if ($validation['validation2']==1): ?>
+            <?php if ($validation['validation1']==1 && $validation['validation2']==1 && $validation['validationRH']==1 && $validation['validationDG']==0): ?>
                     <button onclick="validationDG()" class="button-validion">Valider</button>
                 <?php endif; ?> 
 
@@ -907,7 +940,7 @@ Actions d’accompagnement envisagées (formation, mise en situation, tutorat, �
             <form class="rh-collaborateurs-container" action="rh.php" method="post">
                 <h1>Collaborateurs</h1>
                 <?php foreach ($collabList as $collaborateur): ?>
-                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="<?=$collaborateur['validationRH'] == 1?'collaborateurN2':($collaborateur['validation2'] == 1?'collaborateur valideeN1':'collaborateur')?>">
+                    <button type="submit" name="selected_collaborateur" value="<?= htmlspecialchars($collaborateur['id']) ?>" class="<?=$collaborateur['validationRH'] == 1?'collaborateurN2':($collaborateur['validation1'] == 1?'collaborateur valideeN1':'collaborateur')?>">
                         <?= htmlspecialchars($collaborateur['Employe']) ?>
                     </button>
                 <?php endforeach; ?>
@@ -946,8 +979,8 @@ Actions d’accompagnement envisagées (formation, mise en situation, tutorat, �
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><textarea class="input-objectif" type="text" id="discipline-Nbsanctions" cols="30" rows="5"   <?= $validationStatus['validation2']==0?'disabled':''?>  ><?php echo $discipline["nb_sanctions"]?></textarea></td>
-                                    <td><textarea class="input-objectif" type="text" id="discipline-Obsanctions"  cols="30" rows="5" <?= $validationStatus['validation2']==0?'disabled':''?> ><?php echo $discipline["obj_sanctions"]?></textarea></td>
+                                    <td><textarea class="input-objectif" type="text" id="discipline-Nbsanctions" cols="30" rows="5"   <?= $validationStatus['validation1']==0?'disabled':''?>  ><?php echo $discipline["nb_sanctions"]?></textarea></td>
+                                    <td><textarea class="input-objectif" type="text" id="discipline-Obsanctions"  cols="30" rows="5" <?= $validationStatus['validation1']==0?'disabled':''?> ><?php echo $discipline["obj_sanctions"]?></textarea></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -960,13 +993,13 @@ Actions d’accompagnement envisagées (formation, mise en situation, tutorat, �
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><textarea class="input-objectif" type="text" id="discipline-assiduite" cols="30" rows="5" <?= $validationStatus['validation2']==0?'disabled':''?> ><?php echo $discipline["assiduite"]?></textarea></td>
-                                    <td><textarea class="input-objectif" type="text" id="discipline-commentaire"  cols="30" rows="5" <?= $validationStatus['validation2']==0?'disabled':''?> ><?php echo $discipline["commentaire"]?></textarea></td>
+                                    <td><textarea class="input-objectif" type="text" id="discipline-assiduite" cols="30" rows="5" <?= $validationStatus['validation1']==0?'disabled':''?> ><?php echo $discipline["assiduite"]?></textarea></td>
+                                    <td><textarea class="input-objectif" type="text" id="discipline-commentaire"  cols="30" rows="5" <?= $validationStatus['validation1']==0?'disabled':''?> ><?php echo $discipline["commentaire"]?></textarea></td>
                                 </tr>
                             </tbody>
                         </table>
                 </div>   
-                <?php if ($validation['validation2']==1): ?>
+                <?php if ($validation['validation1']==1): ?>
                     <button onclick="sendDiscipline()" class="button-validion">Valider</button>
                 <?php endif; ?> 
             <?php endif; ?> 
@@ -981,7 +1014,51 @@ Actions d’accompagnement envisagées (formation, mise en situation, tutorat, �
 </html>
 
 <script>
+    function selectFilter(element){
+        element.classList.toggle('selected-filter');
+        applyFilters();
+    }
+    function getColumnIndex(category) {
+        const columnMap = {
+            "Auto Evaluation :": 2,
+            "Evaluation N+1 :": 3,
+            "Evaluation N+2 :": 4,
+            "Evaluation RH :": 5,
+            "Evaluation DG :": 6
+        };
+        return columnMap[category] || -1;
+    }
+    function applyFilters() {
+        const table = document.querySelector("#table-etat");
+        const tableRows = table.querySelectorAll("tbody tr");
 
+        let activeFilters = {};
+
+        document.querySelectorAll(".selected-filter").forEach(selected => {
+            let category = selected.closest(".filter-row").querySelector(".filter-title").textContent.trim();
+            let value = selected.textContent.trim();
+
+            if (!activeFilters[category]) {
+                activeFilters[category] = [];
+            }
+            activeFilters[category].push(value);
+        });
+
+        tableRows.forEach(row => {
+            let showRow = true;
+
+            Object.keys(activeFilters).forEach(category => {
+                let columnIndex = getColumnIndex(category);
+                let cellText = row.children[columnIndex]?.textContent.trim();
+
+                if (activeFilters[category].length > 0 && !activeFilters[category].includes(cellText)) {
+                    showRow = false;
+                }
+            });
+
+            row.style.display = showRow ? "" : "none";
+        });
+    }
     function validationDG(){
 
         let x = document.getElementById("snackbar");
